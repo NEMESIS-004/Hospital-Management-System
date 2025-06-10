@@ -1,0 +1,95 @@
+/* Custom Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+}
+
+.btn-primary {
+    background-color: #4154f1;
+    border-color: #4154f1;
+}
+
+.btn-primary:hover {
+    background-color: #364ee6;
+    border-color: #364ee6;
+}
+
+.list-group-item {
+    border: none;
+    padding: 0.75rem 1.25rem;
+    color: #6c757d;
+    transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+    color: #4154f1;
+    background-color: #f8f9fa;
+}
+
+.appointment-card {
+    transition: transform 0.3s ease;
+}
+
+.appointment-card:hover {
+    transform: translateY(-5px);
+}
+
+.modal-content {
+    border: none;
+    border-radius: 10px;
+}
+
+/* Custom styles for the calendar */
+.calendar-container {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.calendar-day {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.calendar-day:hover {
+    background-color: #e9ecef;
+}
+
+.calendar-day.active {
+    background-color: #4154f1;
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+}
